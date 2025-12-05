@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia Character Guide</title>
+    <link rel="stylesheet" href="css/characters.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="header-banner">
+        <h1>Zootopia Character Encyclopedia</h1>
+        <p>Explore the diverse cast of characters from Zootopia</p>
+    </div>
+
+    <main class="characters-container">
+        <div class="category-tabs">
+            <button class="tab-btn active" data-category="all">All Characters</button>
+            <button class="tab-btn" data-category="main">Main Characters</button>
+            <button class="tab-btn" data-category="police">Police Animals</button>
+            <button class="tab-btn" data-category="social">Social Figure</button>
+            <button class="tab-btn" data-category="friend">Protagonist's Friend</button>
+        </div>
+
+        <div class="characters-grid">
+            <!-- Judy Hopps -->
+            <div class="character-card card-judy" data-category="main" data-character="judy-hopps">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/judy.PNG" alt="Judy Hopps" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Judy Hopps</h3>
+                            <span class="card-species">Rabbit • Police Officer</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Judy Hopps</h3>
+                            <p class="short-bio">First rabbit police officer, determined to prove herself and make the world a better place.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Optimistic</span>
+                                <span class="trait-tag">Brave</span>
+                                <span class="trait-tag">Ambitious</span>
+                            </div>
+                            <button class="detail-btn" data-character="judy-hopps">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nick Wilde -->
+            <div class="character-card card-nick" data-category="main" data-character="nick-wilde">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/nick.PNG" alt="Nick Wilde" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Nick Wilde</h3>
+                            <span class="card-species">Red Fox • Con Artist</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Nick Wilde</h3>
+                            <p class="short-bio">Charming con fox with a cynical outlook, eventually becomes Judy's partner and friend.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Clever</span>
+                                <span class="trait-tag">Sarcastic</span>
+                                <span class="trait-tag">Loyal</span>
+                            </div>
+                            <button class="detail-btn" data-character="nick-wilde">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chief Bogo -->
+            <div class="character-card card-bogo" data-category="police" data-character="chief-bogo">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/bogo.PNG" alt="Chief Bogo" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Chief Bogo</h3>
+                            <span class="card-species">Cape Buffalo • Police Chief</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Chief Bogo</h3>
+                            <p class="short-bio">Tough police chief who initially doubts Judy but comes to respect her abilities.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Gruff</span>
+                                <span class="trait-tag">Honorable</span>
+                                <span class="trait-tag">Fair</span>
+                            </div>
+                            <button class="detail-btn" data-character="chief-bogo">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Officer Clawhauser -->
+            <div class="character-card card-clawhauser" data-category="police" data-character="officer-clawhauser">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/clawhauser.PNG" alt="Officer Clawhauser" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Officer Clawhauser</h3>
+                            <span class="card-species">Cheetah • Dispatcher</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Officer Clawhauser</h3>
+                            <p class="short-bio">Cheerful front desk officer with a passion for donuts and pop star Gazelle.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Friendly</span>
+                                <span class="trait-tag">Enthusiastic</span>
+                                <span class="trait-tag">Optimistic</span>
+                            </div>
+                            <button class="detail-btn" data-character="officer-clawhauser">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mr. Big -->
+            <div class="character-card card-mrbig" data-category="friend" data-character="mr-big">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/mrbig.PNG" alt="Mr. Big" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Mr. Big</h3>
+                            <span class="card-species">Arctic Shrew • Crime Boss</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Mr. Big</h3>
+                            <p class="short-bio">Powerful crime boss with a strong sense of honor and family values.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Respected</span>
+                                <span class="trait-tag">Loyal</span>
+                                <span class="trait-tag">Fierce</span>
+                            </div>
+                            <button class="detail-btn" data-character="mr-big">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fru Fru -->
+            <div class="character-card card-frufru" data-category="friend" data-character="fru-fru">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/frufru.PNG" alt="Fru Fru" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Fru Fru</h3>
+                            <span class="card-species">Arctic Shrew • Socialite</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Fru Fru</h3>
+                            <p class="short-bio">Mr. Big's daughter who becomes grateful to Judy for saving her life.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Kind</span>
+                                <span class="trait-tag">Grateful</span>
+                                <span class="trait-tag">Stylish</span>
+                            </div>
+                            <button class="detail-btn" data-character="fru-fru">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kevin -->
+            <div class="character-card card-kevin" data-category="friend" data-character="kevin">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/kevin.PNG" alt="Kevin" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Kevin</h3>
+                            <span class="card-species">Polar Bear • Bodyguard</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Kevin</h3>
+                            <p class="short-bio">Mr. Big's loyal polar bear henchman who enforces his orders.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Strong</span>
+                                <span class="trait-tag">Silent</span>
+                                <span class="trait-tag">Loyal</span>
+                            </div>
+                            <button class="detail-btn" data-character="kevin">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dawn Bellwether -->
+            <div class="character-card card-bellwether" data-category="social" data-character="dawn-bellwether">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/bellwether.PNG" alt="Dawn Bellwether" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Dawn Bellwether</h3>
+                            <span class="card-species">Sheep • Assistant Mayor</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Dawn Bellwether</h3>
+                            <p class="short-bio">The seemingly meek assistant mayor who secretly orchestrates a conspiracy against predators.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Deceptive</span>
+                                <span class="trait-tag">Cunning</span>
+                                <span class="trait-tag">Ambition</span>
+                            </div>
+                            <button class="detail-btn" data-character="dawn-bellwether">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mayor Lionheart -->
+            <div class="character-card card-lionheart" data-category="social" data-character="mayor-lionheart">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/lionheart.PNG" alt="Mayor Lionheart" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Mayor Lionheart</h3>
+                            <span class="card-species">Lion • Mayor</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Mayor Lionheart</h3>
+                            <p class="short-bio">Charismatic mayor who hides the truth about predators going savage.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Charismatic</span>
+                                <span class="trait-tag">Politician</span>
+                                <span class="trait-tag">Secretive</span>
+                            </div>
+                            <button class="detail-btn" data-character="mayor-lionheart">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gazelle -->
+            <div class="character-card card-gazelle" data-category="social" data-character="gazelle">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/gazelle.PNG" alt="Gazelle" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Gazelle</h3>
+                            <span class="card-species">Gazelle • Pop Star</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Gazelle</h3>
+                            <p class="short-bio">Zootopia's biggest pop star who advocates for peace and unity.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Peaceful</span>
+                                <span class="trait-tag">Influential</span>
+                                <span class="trait-tag">Talented</span>
+                            </div>
+                            <button class="detail-btn" data-character="gazelle">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flash Slothmore -->
+            <div class="character-card card-flash" data-category="friend" data-character="flash-slothmore">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-image-container">
+                            <img src="images/characters/flash.PNG" alt="Flash Slothmore" class="card-image">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-name">Flash Slothmore</h3>
+                            <span class="card-species">Sloth • DMV Employee</span>
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="back-content">
+                            <h3>Flash Slothmore</h3>
+                            <p class="short-bio">Extremely slow DMV worker with a surprising hidden talent for fast driving.</p>
+                            <div class="trait-tags">
+                                <span class="trait-tag">Slow</span>
+                                <span class="trait-tag">Patient</span>
+                                <span class="trait-tag">Humorous</span>
+                            </div>
+                            <button class="detail-btn" data-character="flash-slothmore">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="character-modal">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="character-detail" id="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <div class="return-container">
+            <a href="homepage.html" class="return-btn">return home</a>
+    </div>
+
+    <script>
+        const characters = {
+            "judy-hopps": {
+                name: "Judy Hopps",
+                species: "Rabbit",
+                gender: "Female",
+                occupation: "Police Officer",
+                bio: "The first rabbit police officer in Zootopia, Judy is determined to make the world a better place and prove that anyone can be anything.",
+                personality: "Determined, optimistic, brave, ambitious, hardworking, idealistic, honest, compassionate, persistent, loyal, responsible",
+                story: `<p>Judy Hopps grew up on a carrot farm with 275 brothers and sisters, where she faced skepticism about her dreams of becoming a police officer.</p>
+                        <p>Against all odds, she graduated top of her class at the Zootopia Police Academy and became the first rabbit officer in the city's history.</p>
+                        <p>Initially assigned to parking duty by Chief Bogo, Judy's persistence led her to uncover a major conspiracy involving missing predators.</p>
+                        <p>Using her success and experiences as proof, she implores those around her to try and see beyond stereotypes, prove their worth, and reach their goals in spite of obstacles. She believes these positive actions can ultimately lead to a better world, making her the physical representation of Zootopia's motto "Anyone can be anything."</p>`,
+                image: "images/characters/judy.PNG",
+                themeColor: "#FF6B6B",
+                avatarPosition: "center",
+                borderColor: "#FF6B6B"
+            },
+            "nick-wilde": {
+                name: "Nick Wilde",
+                species: "Red Fox",
+                gender: "Male",
+                occupation: "Con Artist / Police Consultant",
+                bio: "Nick is a charming small-time con fox with a sharp tongue and quick wit. When outsmarted by a rabbit cop, he unexpectedly ends up helping her solve a mystery.",
+                personality: "Clever, witty, sarcastic, charismatic, resourceful, cynical, loyal, protective, brave, humorous, street-smart, adaptable",
+                story: `<p>Nick Wilde grew up facing prejudice as a fox, which made him cynical about Zootopia's ideals of equality. As a child, he tried to join the Junior Ranger Scouts but was muzzled by the other animals, who feared him because of his species.</p>
+                        <p>This traumatic experience led Nick to embrace the fox stereotype, becoming a small-time con artist who sold popsicles (and later pawpsicles) with his partner Finnick.</p>
+                        <p>His life changed when he met Judy Hopps, who initially arrested him for tax evasion but later recruited him as a reluctant partner to solve the missing mammals case.</p>
+                        <p>Over time, Nick's cynicism faded as he helped Judy uncover the conspiracy, eventually joining the Zootopia Police Department as its first fox officer.</p>`,
+                image: "images/characters/nick.PNG",
+                themeColor: "#FFB74D",
+                avatarPosition: "center",
+                borderColor: "#FFB74D"
+            },
+            "chief-bogo": {
+                name: "Chief Bogo",
+                species: "Cape Buffalo",
+                gender: "Male",
+                occupation: "Police Chief",
+                bio: "The no-nonsense chief of the Zootopia Police Department who initially doubts Judy's abilities but comes to respect her determination.",
+                personality: "Tough, strict, gruff, honorable, fair, responsible, protective, pragmatic, skeptical, eventual ally, respected leader",
+                story: `<p>Chief Bogo is a tough, no-nonsense police chief who runs the Zootopia Police Department with an iron hoof. He's initially skeptical of Judy Hopps' appointment to the force, believing a rabbit is too small and inexperienced for police work.</p>
+                        <p>He assigns Judy to parking duty, hoping she'll quit, but is impressed when she solves a missing persons case that had stumped the rest of the force. Bogo gradually comes to respect Judy's determination and abilities.</p>
+                        <p>Though he maintains his gruff exterior, Bogo ultimately proves to be fair and honorable, supporting Judy and Nick's investigation and recognizing their contributions to the department.</p>`,
+                image: "images/characters/bogo.PNG",
+                themeColor: "#4CAF50",
+                avatarPosition: "center",
+                borderColor: "#4CAF50"
+            },
+            "officer-clawhauser": {
+                name: "Officer Clawhauser",
+                species: "Cheetah",
+                gender: "Male",
+                occupation: "Police Dispatcher",
+                bio: "The friendly, doughnut-loving cheetah who works as the Zootopia Police Department's dispatcher and is a huge fan of Gazelle.",
+                personality: "Friendly, enthusiastic, cheerful, optimistic, talkative, helpful, loyal, passionate, outgoing, supportive",
+                story: `<p>Officer Benjamin Clawhauser is the Zootopia Police Department's most cheerful dispatcher, known for his love of doughnuts and pop star Gazelle.</p>
+                        <p>Despite his large size, Clawhauser is gentle and friendly, always greeting everyone with a smile. He was the first officer to welcome Judy Hopps to the department, though he initially struggled to hide his surprise at seeing a rabbit police officer.</p>
+                        <p>Clawhauser provides comic relief with his enthusiasm for Gazelle and his doughnut breaks, but he's also a dedicated employee who takes his dispatching duties seriously.</p>
+                        <p>His character challenges stereotypes by showing that even a large predator like a cheetah can be gentle and friendly.</p>`,
+                image: "images/characters/clawhauser.PNG",
+                themeColor: "#FF9800",
+                avatarPosition: "center",
+                borderColor: "#FF9800"
+            },
+            "mr-big": {
+                name: "Mr. Big",
+                species: "Arctic Shrew",
+                gender: "Male",
+                occupation: "Crime Boss",
+                bio: "A tiny but powerful Arctic shrew who runs the Tundratown mafia with an iron fist, while maintaining strong family values.",
+                personality: "Powerful, respected, intimidating, loyal to family, honorable, vengeful, protective, wise, sophisticated, commanding",
+                story: `<p>Mr. Big treasures his family more than anything in the world—a trait he has maintained since his early years. His friends are as precious as family to him; he quickly befriends acquaintances and employees, treating them hospitably and respectfully.</p>
+                        <p>However, any friends who disrespect him or his family face his wrath and are reminded of how dangerous he is. He operates as a crime boss, but his honor-based code makes him loyal to those who show him respect.</p>
+                        <p>Mr. Big initially threatens Judy and Nick after they interrupt his daughter Fru Fru's wedding rehearsal, but later becomes an ally after Judy saves Fru Fru's life.</p>
+                        <p>His character provides an important lesson about not judging others by their size, as this tiny shrew commands respect from even the largest predators in Zootopia.</p>`,
+                image: "images/characters/mrbig.PNG",
+                themeColor: "#303F9F",
+                avatarPosition: "center",
+                borderColor: "#303F9F"
+            },
+            "fru-fru": {
+                name: "Fru Fru",
+                species: "Arctic Shrew",
+                gender: "Female",
+                occupation: "Socialite",
+                bio: "Mr. Big's daughter who becomes indebted to Judy after Judy saves her from a runaway doughnut shop cart on her wedding day.",
+                personality: "Kind, grateful, stylish, sophisticated, loyal, appreciative, friendly",
+                story: `<p>Fru Fru is the daughter of the powerful crime boss Mr. Big. She first appears when Judy and Nick accidentally interrupt her wedding rehearsal, leading to their near-"icing" by Mr. Big's polar bear henchmen.</p>
+                        <p>Later, Judy saves Fru Fru from a runaway doughnut cart, earning her the gratitude of both Fru Fru and Mr. Big. This act of kindness leads Mr. Big to help Judy and Nick with their investigation.</p>
+                        <p>Fru Fru represents the softer side of the otherwise intimidating shrew family, showing kindness and gratitude despite her privileged upbringing.</p>
+                        <p>At the end of the film, she and her new husband are expecting a child, whom she names Judy in honor of her rescuer.</p>`,
+                image: "images/characters/frufru.png",
+                themeColor: "#E91E63",
+                avatarPosition: "center",
+                borderColor: "#E91E63"
+            },
+            "kevin": {
+                name: "Kevin",
+                species: "Polar Bear",
+                gender: "Male",
+                occupation: "Bodyguard / Henchman",
+                bio: "A henchman of Mr. Big, Kevin and other polar bears act as enforcers, loyal to Mr. Big and executing orders without hesitation.",
+                personality: "Calm, decisive, loyal, ruthless, humorous.",
+                story: `<p>Kevin is a calm polar bear, like all bears in Mr. Big's mafia. He seems to enjoy his work under Mr. Big and obeys the crime lord without question. He has no problem executing animals via "icing" (freezing), showing he is cold-hearted—but he also has a sense of humor.</p>
+                        <p>Despite his intimidating size and role as an enforcer, Kevin shows respect to those whom Mr. Big respects. After Judy saves Fru Fru, Kevin helps Judy and Nick by providing information about the missing mammals.</p>
+                        <p>His character provides comic relief through his deadpan delivery and unexpected moments of helpfulness.</p>`,
+                image: "images/characters/kevin.PNG",
+                themeColor: "#607D8B",
+                avatarPosition: "center",
+                borderColor: "#607D8B"
+            },
+            "dawn-bellwether": {
+                name: "Dawn Bellwether",
+                species: "Sheep",
+                gender: "Female",
+                occupation: "Assistant Mayor / Mayor",
+                bio: "The seemingly timid assistant mayor who secretly orchestrates a conspiracy to frame predators as dangerous.",
+                personality: "Deceptive, cunning, manipulative, ambitious, resentful, calculating, two-faced, persuasive, vengeful",
+                story: `<p>Dawn Bellwether serves as Assistant Mayor under Mayor Lionheart, appearing to be a timid, helpful sheep who supports Judy Hopps' efforts.</p>
+                        <p>However, she secretly resents predators, believing prey should be in charge. Bellwether masterminds a conspiracy using a serum to make predators go "savage," then frames them to create fear and gain power.</p>
+                        <p>She manipulates Judy into publicly suggesting predators are biologically prone to violence, then uses the resulting panic to take over as mayor when Lionheart is arrested.</p>
+                        <p>Judy and Nick eventually expose Bellwether's plot, and she is arrested for her crimes, proving that true villainy comes from within, regardless of species.</p>`,
+                image: "images/characters/bellwether.png",
+                themeColor: "#9E9E9E",
+                avatarPosition: "center",
+                borderColor: "#9E9E9E"
+            },
+            "mayor-lionheart": {
+                name: "Mayor Lionheart",
+                species: "Lion",
+                gender: "Male",
+                occupation: "Mayor of Zootopia",
+                bio: "The charismatic mayor of Zootopia who hides a secret about predators going savage out of fear of public panic.",
+                personality: "Charismatic, authoritative, concerned, secretive, political, protective, flawed, well-meaning",
+                story: `<p>Mayor Leodore Lionheart is Zootopia's charismatic leader, known for his inspiring speeches about the city's ideals of equality.</p>
+                        <p>When predators start going "savage," Lionheart panics and secretly imprisons them, fearing public backlash and the end of his political career.</p>
+                        <p>He hides the situation from the public and even his assistant Bellwether, while secretly funding a scientist's research to find a cure.</p>
+                        <p>Lionheart's actions, though well-intentioned to prevent panic, ultimately backfire, leading to his arrest and allowing Bellwether to seize power. His character shows how fear can lead even good leaders to make bad decisions.</p>`,
+                image: "images/characters/lionheart.PNG",
+                themeColor: "#FFC107",
+                avatarPosition: "center",
+                borderColor: "#FFC107"
+            },
+            "gazelle": {
+                name: "Gazelle",
+                species: "Gazelle",
+                gender: "Female",
+                occupation: "Pop Star / Activist",
+                bio: "A pop star in Zootopia, Gazelle is down-to-earth and values equality. She held peace rallies to oppose predator-prey prejudice, with a dance crew consisting of predators.",
+                personality: "Humble, kind, loving, music-passionate, equality-minded, Disseminator of positive energy",
+                story: `<p>Despite being a pop idol, Gazelle is very humble and kind, and she loves singing. She cares deeply about equality and loves Zootopia because she believes it's a place where all are equal—regardless of being predator or prey.</p>
+                        <p>When conflicts between predators and prey arose, she held a peace rally to call for unity. All of her dancers are predators (namely tigers), which reflects her commitment to her values.</p>
+                        <p>Gazelle uses her fame and influence to promote harmony throughout Zootopia, becoming a symbol of the city's better nature.</p>
+                        <p>Officer Clawhauser is one of her biggest fans, often seen watching her music videos while on duty.</p>`,
+                image: "images/characters/gazelle.PNG",
+                themeColor: "#E91E63",
+                avatarPosition: "center",
+                borderColor: "#E91E63"
+            },
+            "flash-slothmore": {
+                name: "Flash Slothmore",
+                species: "Three-Toed Sloth",
+                gender: "Male",
+                occupation: "DMV Employee",
+                bio: "A DMV employee in Zootopia, Flash moves extremely slowly but is professional and loves jokes. He surprises with his driving skills at the end of the film, creating a funny contrast.",
+                personality: "Easygoing, friendly, gentle, professional, slow-moving, humorous, sociable, helpful.",
+                story: `<p>Despite his slowness, Flash is a friendly sloth. He is polite to Judy Hopps and speaks quite professionally—making him sound more intelligent than he looks. He is well acquainted with Nick Wilde and speaks to him in a casual, friendly way.</p>
+                        <p>He willingly helps Judy, but he can be easily distracted: for example, when Nick interrupts his work to tell a joke, Flash finds it hilarious and even retells it to his co-worker Priscilla Tripletoe.</p>
+                        <p>Despite being slow in all other aspects, he is known to be a fast driver at the end of the movie—a humorous contrast to his usual demeanor.</p>
+                        <p>Flash provides some of the film's funniest moments through the contrast between his slow movements and his surprising competence at his job.</p>`,
+                image: "images/characters/flash.PNG",
+                themeColor: "#8BC34A",
+                avatarPosition: "center",
+                borderColor: "#8BC34A"
+            }
+        };
+        const detailBtns = document.querySelectorAll('.detail-btn');
+        const modal = document.getElementById('character-modal');
+        const modalBody = document.getElementById('modal-body');
+        const closeBtn = document.querySelector('.close-btn');
+        const backToTopBtn = document.getElementById('back-to-top');
+        const modalContent = document.querySelector('.modal-content');
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const characterCards = document.querySelectorAll('.character-card');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.getAttribute('data-category');
+                
+                characterCards.forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        characterCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.classList.add('hover');
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.classList.remove('hover');
+            });
+        });
+
+        detailBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const charId = btn.getAttribute('data-character');
+                showCharacterDetails(charId);
+            });
+        });
+
+        characterCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+
+                if (!e.target.classList.contains('detail-btn') && !e.target.closest('.detail-btn')) {
+                    const charId = card.getAttribute('data-character');
+                    showCharacterDetails(charId);
+                }
+            });
+        });
+
+        function showCharacterDetails(charId) {
+            const character = characters[charId];
+            
+            if (!character) return; 
+            
+            modalContent.style.setProperty('--theme-color', character.themeColor);
+            modalContent.style.setProperty('--border-color', character.borderColor);
+            
+            modalBody.innerHTML = `
+                <div class="avatar-container">
+                    <div class="character-avatar-container">
+                        <img src="${character.image}" alt="${character.name}" class="character-avatar">
+                    </div>
+                    <div class="character-meta">
+                        <div class="species-badge">${character.species}</div>
+                        <div class="occupation-tag">${character.occupation}</div>
+                    </div>
+                </div>
+                <div class="detail-content">
+                    <h2 class="detail-name">${character.name}</h2>
+                    <div class="detail-basic">
+                        <span><i class="fas fa-venus-mars"></i> ${character.gender}</span>
+                        <span><i class="fas fa-briefcase"></i> ${character.occupation}</span>
+                    </div>
+                    
+                    <div class="detail-section detail-bio">
+                        <h3><i class="fas fa-info-circle"></i> Official Bio</h3>
+                        <p>${character.bio}</p>
+                    </div>
+                    
+                    <div class="detail-section detail-personality">
+                        <h3><i class="fas fa-star"></i> Personality Traits</h3>
+                        <div class="personality-tags">
+                            ${character.personality.split(', ').map(trait => `<span class="personality-tag">${trait}</span>`).join('')}
+                        </div>
+                    </div>
+                    
+                    <div class="detail-section detail-story">
+                        <h3><i class="fas fa-book"></i> Character Story</h3>
+                        ${character.story}
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+            setTimeout(() => {
+                modalContent.classList.add('animate-in');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        closeBtn.addEventListener('click', closeModal);
+        
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+        
+        function closeModal() {
+            modalContent.classList.remove('animate-in');
+            setTimeout(() => {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+
+            setTimeout(() => {
+                characterCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 100);
+                });
+            }, 300);
+        });
+    </script>
+</body>
+</html>

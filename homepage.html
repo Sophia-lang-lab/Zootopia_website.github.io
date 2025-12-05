@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zootopia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+ 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+   
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-orange-200 images\ip\image-global">
+    <header id="home">
+    <h1 class="logo">ZOOTOPIA</h1>
+    <nav>
+        <a class="nav-items active" href="#">Home</a>
+        <a class="nav-items" href="https://zijin1888.github.io/Zootopia_CharacTest/">Character test</a>
+        <a class="nav-items" href="highlights.html">highlights</a>
+        <a class="nav-items" href="reality _IP.html">reality IP</a>
+        <a class="nav-items" href="https://my-message-board-11198.infinityfreeapp.com/onlyDisplayMessages.php">message board</a>
+    </nav>
+    <nav>
+        <a id="login" href="https://my-message-board-11198.infinityfreeapp.com/login.php">login</a>
+    </nav>  
+</header>
+
+    <section class="relative w-full h-[500px] md:h-[600px] overflow-hidden bg-gray-100">
+
+        <div id="carousel" class="w-full h-full">
+            
+            <div class="carousel-item active w-full h-full">
+                <img src="images\carousel_image\carousel_image1.png" 
+                     alt="carousel_image1" 
+                     class="w-full h-full object-cover">
+                <div class="carousel_text">
+                    <h2 class="text-2xl md:text-3xl font-bold">Savanna Central</h2>
+                    <p class="mt-2 max-w-2xl">Urban Core Area, Administrative & Commercial Center</p>
+                </div>
+            </div>
+            
+            <div class="carousel-item w-full h-full">
+                <img src="images\carousel_image\carousel_image2.png" 
+                     alt="carousel_image2" 
+                     class="w-full h-full object-cover">
+                <div class="carousel_text">
+                    <h2 class="text-2xl md:text-3xl font-bold">Tundratown</h2>
+                    <p class="mt-2 max-w-2xl">Frigid Zone Species Residential Area & Entertainment District</p>
+                </div>
+            </div>
+            
+
+            <div class="carousel-item w-full h-full">
+                <img src="images\carousel_image\carousel_image3.png" 
+                     alt="carousel_image3" 
+                     class="w-full h-full object-cover">
+                <div class="carousel_text">
+                    <h2 class="text-2xl md:text-3xl font-bold">Rainforest District</h2>
+                    <p class="mt-2 max-w-2xl">Tropical Species Residential Area & Natural Scenic Area</p>
+                </div>
+            </div>
+
+
+            <div class="carousel-item w-full h-full">
+                <img src="images\carousel_image\carousel_image4.png" 
+                     alt="carousel_image4" 
+                     class="w-full h-full object-cover">
+                <div class="carousel_text">
+                    <h2 class="text-2xl md:text-3xl font-bold">Sahara Square</h2>
+                    <p class="mt-2 max-w-2xl">Desert Species Residential Area & High-End Commercial District</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <button id="prevBtn" class="left-4">
+            <i class="fa fa-chevron-left"></i>
+        </button>
+        <button id="nextBtn" class="right-4">
+            <i class="fa fa-chevron-right"></i>
+        </button>
+        
+        <div class="indicator absolute bottom-20 left-0 right-0 flex justify-center gap-2">
+            <span active data-index="0"></span>
+            <span data-index="1"></span>
+            <span data-index="2"></span>
+            <span data-index="3"></span>
+        </div>
+    </section>
+
+    <div class="zootopia_intro py-7 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-6xl font-bold text-center mt-20 mb-10 bg-gradient-to-r from-red-400 via-blue-300 to-purple-500 bg-clip-text text-transparent animate-pulse">
+                film introduction
+            </h1>
+            <div class="modern-text-box rounded-2xl shadow-2xl p-8 border border-gray-200 transform transition-all duration-300 hover:shadow-3xl hover:-translate-y-2" style="background:rgb(227, 229, 255);">
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed">
+                    Zootopia is an animated film produced by Walt Disney Animation Studios. The film is set in Zootopia, a modern mammal metropolis. It is a melting pot where animals of all kinds, from the largest elephant to the smallest shrew, live together. The city has various areas, such as the Sahara Square with a desert climate and the frigid Tundratown.<br><br>
+The protagonist Judy Hopps is the first rabbit to join the police force. Determined to prove herself, she takes on a mysterious missing persons case and teams up with Nick Wilde, a fox who makes a living by cheating. Together, they uncover a conspiracy that threatens the peaceful co - existence of animals.<br><br>
+The film explores themes of prejudice and discrimination, showing that these can divide society. However, it also emphasizes the power of unity, friendship, and cooperation in overcoming these challenges.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="images\ip\image-body">
+        <div class="main-container">
+            
+            <div class="container">
+                <div id="map" style="position: relative;">
+                    <img src="images\map\map1.jpg" alt="Map Image" style="width: 100%; height: auto;">
+
+                    <div class="markers-container">
+                        <div class="custom-marker marker-downtown" onclick="showRegionDetail('downtown')">🌇</div>
+                        <div class="custom-marker marker-savanna" onclick="showRegionDetail('savanna')">🌿</div>
+                        <div class="custom-marker marker-rainforest" onclick="showRegionDetail('rainforest')">🌴</div>
+                        <div class="custom-marker marker-desert" onclick="showRegionDetail('desert')">🐫</div>
+                        <div class="custom-marker marker-tundra" onclick="showRegionDetail('tundra')">🐻‍❄️</div>
+                    </div>
+                </div>
+
+        
+                <div id="downtown-panel" class="detail-panel">
+                    <div class="detail-header">
+                        <h2>Downtown Zootopia</h2>
+                        <button class="back-btn" onclick="showMap()">Back to Map</button>
+                    </div>
+                    <div class="detail-content">
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\main-city.JPEG" alt="Downtown Zootopia" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <p class="description">
+                                    Downtown Zootopia is the <span class="highlight downtown-color">bustling city center</span> where mammals of all sizes live and work together. 
+                                    It's home to the <span class="highlight downtown-color">Zootopia Police Department</span> and features the iconic Zootopia Railway Station that 
+                                    connects all districts. This vibrant hub serves as the heart of the city's economic and social activities.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="featured-video">
+                            <h3>Featured Movie Clip</h3>
+                            <p>
+                                This clip features the energetic concert of Gazelle, Zootopia's biggest pop star, bringing all citizens together in harmony.
+                            </p>
+                            <div class="video-container">
+                                <video src="images\map\main.mp4" controls allowfullscreen class = "vedio-player"></video>
+                            </div>
+                        </div>
+                        
+                        <div class="related-merchandise">
+                            <h3>Related Merchandise</h3>
+                            <div class="merch-grid">
+                                <div class="merch-item">
+                                    <img src="images\map\main-id.jpg" alt="Luckin Coffee with ZOOTOPIA" class="merch-image">
+                                    <p>Luckin Coffee with ZOOTOPIA</p>
+                                </div>
+                                <div class="merch-item">
+                                    <img src="images\map\main-id1.jpg" alt="POP MART collaboration" class="merch-image">
+                                    <p>POP MART collaboration</p>
+                                </div>
+                                <div class="merch-item">
+                                    <img src="images\map\main-id2.jpg" alt="Luckin Coffee collaboration" class="merch-image">
+                                    <p>Luckin Coffee collaboration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="rainforest-panel" class="detail-panel">
+                    <div class="detail-header">
+                        <h2>Rainforest District</h2>
+                        <button class="back-btn" onclick="showMap()">Back to Map</button>
+                    </div>
+                    <div class="detail-content">
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\rf.JPEG" alt="Rainforest District" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <p class="description">
+                                    The Rainforest District is a <span class="highlight rainforest-color">lush, tropical area</span> filled with dense vegetation, 
+                                    waterfalls, and exotic flora. The climate is humid and warm, perfect for Zootopia's 
+                                    tropical inhabitants. The district features <span class="highlight rainforest-color">winding rivers</span> and canopy bridges that 
+                                    connect different parts of the jungle.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="featured-video">
+                            <h3>Featured Movie Clip</h3>
+                            <p>
+                                This clip shows Judy and Nick searching for Mr. Otterton and encountering the mysterious 
+                                black panther driver in the rainforest biome.
+                            </p>
+                            <div class="video-container">
+                                <video src="images\map\rain.mp4" controls allowfullscreen class = "vedio-player"></video>
+                            </div>
+                        </div>
+                        
+                        <div class="related-merchandise">
+                            <h3>Related Merchandise</h3>
+                            <div class="merch-grid">
+                                <div class="merch-item">
+                                    <img src="images\map\id.png" alt="Disney and ZOOTOPIA" class="merch-image">
+                                    <p>Disney and ZOOTOPIA</p>
+                                </div>
+                                <div class="merch-item">
+                                    <img src="images\map\id1.jpg" alt="UNIQLO with ZOOTOPIA" class="merch-image">
+                                    <p>UNIQLO with ZOOTOPIA</p>
+                                </div>
+                                <div class="merch-item">
+                                    <img src="images\map\id2.jpg" alt="TOP TOY with ZOOTOPIA" class="merch-image">
+                                    <p>TOP TOY with ZOOTOPIA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="desert-panel" class="detail-panel">
+                    <div class="detail-header">
+                        <h2>Sahara Square</h2>
+                        <button class="back-btn" onclick="showMap()">Back to Map</button>
+                    </div>
+                    <div class="detail-content">
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\ds.JPEG" alt="Sahara Square" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>About Sahara Square</h3>
+                                <p>
+                                    Sahara Square is Zootopia's <span class="highlight desert-color">desert region</span>, characterized by its vast sandy landscapes, 
+                                    pyramids, and oases. The temperature here is extremely high during the day and drops 
+                                    significantly at night. The architecture features <span class="highlight desert-color">desert-inspired designs</span> with domes 
+                                    and archways that help regulate indoor temperatures.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\sm.jpg" alt="Camel in Sahara Square" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>Desert Inhabitants</h3>
+                                <p>
+                                    This arid region is home to various desert-dwelling animals, including <span class="highlight desert-color">camels, 
+                                    foxes, and meerkats</span>. The camels of Sahara Square are known for their laid-back 
+                                    attitude and can often be seen working as tour guides, transporting visitors 
+                                    across the desert landscape on their backs. Their ability to store water makes them 
+                                    perfectly adapted to the harsh desert environment. 
+                                </p>
+                                <p style="margin-top: 1rem;">
+                                    The picture on the right shows a partner of Nick in the Zootopia who made money by selling ice cream together. He is a meerkat that lives in the desert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div id="tundra-panel" class="detail-panel">
+                    <div class="detail-header">
+                        <h2>Tundratown</h2>
+                        <button class="back-btn" onclick="showMap()">Back to Map</button>
+                    </div>
+                    <div class="detail-content">
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\jd.JPEG" alt="Tundratown" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>About Tundratown</h3>
+                                <p>
+                                    Tundratown is Zootopia's <span class="highlight cold-region">frozen district</span>, featuring snow-covered landscapes, 
+                                    ice sculptures, and igloo-inspired architecture. The temperature remains below 
+                                    freezing year-round, creating the perfect habitat for Arctic animals. The district 
+                                    is known for its <span class="highlight cold-region">beautiful ice palaces</span> and winter sports facilities.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\pb.jpg" alt="Polar Bear in Tundratown" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>Polar Bears: Tundratown's Majestic Residents</h3>
+                                <p>
+                                    Polar bears are the <span class="highlight cold-region">largest land carnivores</span> in Zootopia, perfectly adapted to Tundratown's freezing climate with their thick fur and layer of fat. These magnificent creatures possess incredible strength and swimming abilities, capable of traveling long distances across ice floes.
+                                </p>
+                                <p style="margin-top: 1rem;">
+                                    In the Zootopia film, polar bears serve as the loyal bodyguards of <span class="highlight cold-region">Mr. Big</span>, the powerful arctic shrew and head of the Tundratown mafia. They are depicted as imposing yet disciplined enforcers who carry out Mr. Big's orders with unwavering dedication.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div id="savanna-panel" class="detail-panel">
+                    <div class="detail-header">
+                        <h2>Savanna Central</h2>
+                        <button class="back-btn" onclick="showMap()">Back to Map</button>
+                    </div>
+                    <div class="detail-content">
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\sd.jpg" alt="Grasslands Savanna" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>About Savanna Central</h3>
+                                <p>
+                                    The Savanna Central is a <span class="highlight savanna-color">vast expanse of rolling grasslands</span> dotted with scattered acacia trees, characteristic of Zootopia's African-inspired biome. The region experiences distinct wet and dry seasons, with golden grasses stretching as far as the eye can see. It's a popular spot for safari tours and wildlife observation.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="featured-video">
+                            <h3>Featured Movie Clip</h3>
+                            <p>
+                                This clip showcases the vibrant life in Savanna Central, where various animals coexist harmoniously in the grasslands.
+                            </p>
+                            <div class="video-container">
+                                <video src="images\map\grass.mp4" controls allowfullscreen class = "video-player"></video>
+                            </div>
+                        </div>
+
+                        <div class="content-block">
+                            <div class="content-image">
+                                <img src="images\map\mouse.jpg" alt="Rodents in Savanna" class="region-image">
+                            </div>
+                            <div class="content-text">
+                                <h3>Rodent Residents</h3>
+                                <p>
+                                    The savanna is home to a thriving community of rodents, including species like <span class="highlight savanna-color">Mr. Big's relatives</span>—small but influential rodents who have built an intricate social structure. These intelligent creatures are known for their burrow systems that crisscross beneath the grasslands.
+                                </p>
+                                <p style="margin-top: 1rem;">
+                                    Much like Mr. Big, these rodents exhibit <span class="highlight savanna-color">remarkable organizational skills</span> and community leadership. They play a crucial role in the savanna ecosystem by dispersing seeds and aerating the soil, maintaining the balance of this unique biome.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="explore-container">
+  <a href="characters.html" class="explore-btn">explore characters</a>
+</div>
+
+
+<h1> “This website is a non-commercial creation, and the copyright of all materials belongs to Disney.”</h1>
+
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const items = carousel.querySelectorAll('.carousel-item');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicators = document.querySelectorAll('.indicator span');
+        
+        let currentIndex = 0;
+        let interval;
+        
+        function initCarousel() {
+            startAutoPlay();
+            prevBtn.addEventListener('click', showPrev);
+            nextBtn.addEventListener('click', showNext);
+            indicators.forEach(indicator => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = parseInt(indicator.dataset.index);
+                    updateCarousel();
+                    restartAutoPlay();
+                });
+            });
+        }
+        
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateCarousel();
+            restartAutoPlay();
+        }
+        
+        function showNext() {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel();
+            restartAutoPlay();
+        }
+        
+        function updateCarousel() {
+            items.forEach((item, index) => {
+                item.classList.toggle('active', index === currentIndex);
+            });
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndex) {
+                    indicator.classList.add('bg-white');
+                    indicator.classList.remove('bg-white/50');
+                } else {
+                    indicator.classList.remove('bg-white');
+                    indicator.classList.add('bg-white/50');
+                }
+            });
+        }
+        
+        function startAutoPlay() {
+            interval = setInterval(showNext, 5000);
+        }
+        
+        function restartAutoPlay() {
+            clearInterval(interval);
+            startAutoPlay();
+        }
+        
+        window.addEventListener('DOMContentLoaded', initCarousel);
+
+
+        const map = L.map('map', {
+            zoomControl: false,
+            attributionControl: false
+        }).setView([50, 50], 5);
+        
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            tileSize: 512,
+            zoomOffset: -1,
+            opacity: 0.2
+        }).addTo(map);
+        
+
+        function pauseAllVideos() {
+            const iframes = document.querySelectorAll('iframe');
+            iframes.forEach(iframe => {
+                try {
+                    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                    const video = iframeDoc.querySelector('video');
+                    if (video && !video.paused) {
+                        video.pause();
+                    }
+                } catch (e) {
+                    const originalSrc = iframe.getAttribute('data-original-src') || iframe.src;
+                    iframe.setAttribute('data-original-src', originalSrc); 
+                    iframe.src = 'about:blank'; 
+                    setTimeout(() => {
+                        iframe.src = originalSrc; 
+                    }, 50);
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', pauseAllVideos);
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                pauseAllVideos();
+            }
+        });
+
+        window.addEventListener('focus', pauseAllVideos);
+
+        function pauseAllVideos() {
+            const videos = document.querySelectorAll('.video-player');
+            videos.forEach(video => {
+                if (!video.paused) {
+                    video.pause();
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            pauseAllVideos();
+        });
+
+        document.addEventListener('visibilitychange', () => {
+
+            if (document.visibilityState === 'visible') {
+                pauseAllVideos();
+            }
+        });
+
+        function showRegionDetail(regionId) {
+            pauseAllVideos();
+            document.getElementById('map').style.display = 'none';
+            document.getElementById(`${regionId}-panel`).classList.add('active');
+        }
+
+        function showMap() {
+            pauseAllVideos();
+            document.getElementById('map').style.display = 'block';
+            document.querySelectorAll('.detail-panel').forEach(panel => {
+                panel.classList.remove('active');
+            });
+        }
+    </script>
+</body>
+</html>
